@@ -1,0 +1,98 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit', location = 'uitoolkit/templates/soy/button.soy' */
+// This file was automatically generated from button.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace RWUI.Templates.Macros.
+ */
+
+if (typeof RWUI == 'undefined') { var RWUI = {}; }
+if (typeof RWUI.Templates == 'undefined') { RWUI.Templates = {}; }
+if (typeof RWUI.Templates.Macros == 'undefined') { RWUI.Templates.Macros = {}; }
+
+
+RWUI.Templates.Macros.buttonStyle = function(opt_data, opt_ignored) {
+  return '<style>' + soy.$$escapeHtml(opt_data['class']) + ' {color: ' + soy.$$escapeHtml(opt_data.style.textColor) + ' !important; background: ' + soy.$$escapeHtml(opt_data.style.backgroundColor) + ';}' + soy.$$escapeHtml(opt_data['class']) + ':hover {background: ' + soy.$$escapeHtml(opt_data.extraStyle.backgroundColorHover) + ';}' + soy.$$escapeHtml(opt_data['class']) + ' .rwui_icon {color: ' + soy.$$escapeHtml(opt_data.style.textColor) + ' !important;}</style>';
+};
+if (goog.DEBUG) {
+  RWUI.Templates.Macros.buttonStyle.soyTemplateName = 'RWUI.Templates.Macros.buttonStyle';
+}
+
+
+RWUI.Templates.Macros.button = function(opt_data, opt_ignored) {
+  return '<a ' + ((opt_data.url) ? ' href="' + soy.$$escapeHtml(opt_data.url) + '" ' : '') + ' class="rwui_button' + ((opt_data.display) ? ' rwui_' + soy.$$escapeHtml(opt_data.display) + ' ' : '') + ((opt_data.size && opt_data.size != 'medium') ? ' rwui_size_' + soy.$$escapeHtml(opt_data.size) + ' ' : '') + ((opt_data.uniqueId) ? ' rwui_id_' + soy.$$escapeHtml(opt_data.uniqueId) + ' ' : '') + ((! opt_data.title) ? ' rwui_icon_only' : '') + '"' + ((opt_data.newWindow) ? 'target="_blank" rel="noopener noreferrer"' : '') + ((opt_data.tooltip) ? 'title="' + soy.$$escapeHtml(opt_data.tooltip) + '"' : (opt_data.title) ? 'title="' + soy.$$escapeHtml(opt_data.title) + '"' : '') + '>' + RWUI.Templates.Macros.buttonStyle({class: '.rwui_id_' + opt_data.uniqueId, style: opt_data.style, extraStyle: opt_data.extraStyle}) + ((opt_data.icon && opt_data.icon != 'none') ? '<span class="rwui_icon rwui_iconfont_' + soy.$$escapeHtml(opt_data.icon) + '"></span>' : '') + ((opt_data.title) ? ((opt_data.newWindow) ? '<span class="rwui_icon rwui_iconfont_new_window" style="float: right;"></span>' : '') + '<span class="rwui_content' + ((opt_data.icon && opt_data.icon != 'none') ? ' rwui_has_icon ' : '') + ((opt_data.newWindow) ? ' rwui_has_icon_right ' : '') + '">' + ((opt_data.title) ? soy.$$escapeHtml(opt_data.title) : '') + '</span>' : '') + '</a>';
+};
+if (goog.DEBUG) {
+  RWUI.Templates.Macros.button.soyTemplateName = 'RWUI.Templates.Macros.button';
+}
+
+}catch(e){WRMCB(e)};
+;
+try {
+/* module-key = 'com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit', location = 'uitoolkit/templates/soy/textbox.soy' */
+// This file was automatically generated from textbox.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace RWUI.Templates.Macros.
+ */
+
+if (typeof RWUI == 'undefined') { var RWUI = {}; }
+if (typeof RWUI.Templates == 'undefined') { RWUI.Templates = {}; }
+if (typeof RWUI.Templates.Macros == 'undefined') { RWUI.Templates.Macros = {}; }
+
+
+RWUI.Templates.Macros.textBox = function(opt_data, opt_ignored) {
+  return '<div class="rwui_text_box' + ((opt_data.size) ? ' rwui_text_' + soy.$$escapeHtml(opt_data.size) + ' ' : '') + ((opt_data.type) ? ' rwui_type_' + soy.$$escapeHtml(opt_data.type) + ' ' : '') + ((opt_data.uniqueId) ? ' rwui_id_' + soy.$$escapeHtml(opt_data.uniqueId) + ' ' : '') + '" >' + ((opt_data.style.icon) ? '<span class="rwui_icon rwui_iconfont_' + soy.$$escapeHtml(opt_data.style.icon) + '"></span>' : '') + '<span class="rwui_content rwui_body' + ((opt_data.type && opt_data.type != 'default') ? ' rwui_has_icon ' : '') + '" >' + soy.$$filterNoAutoescape(opt_data.body) + '</span>' + ((opt_data.style) ? '<style>.rwui_text_box.rwui_id_' + soy.$$escapeHtml(opt_data.uniqueId) + ' {background-color: ' + soy.$$escapeHtml(opt_data.style.backgroundColor) + ';}.rwui_text_box.rwui_id_' + soy.$$escapeHtml(opt_data.uniqueId) + ' * {color: ' + soy.$$escapeHtml(opt_data.style.textColor) + ';}.rwui_text_box.rwui_id_' + soy.$$escapeHtml(opt_data.uniqueId) + ' span.rwui_icon {color: ' + soy.$$escapeHtml(opt_data.style.textColor) + ';}</style>' : '') + '</div>';
+};
+if (goog.DEBUG) {
+  RWUI.Templates.Macros.textBox.soyTemplateName = 'RWUI.Templates.Macros.textBox';
+}
+
+}catch(e){WRMCB(e)};
+;
+try {
+/* module-key = 'com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit', location = 'uitoolkit/templates/soy/tabs.soy' */
+// This file was automatically generated from tabs.soy.
+// Please don't edit this file by hand.
+
+/**
+ * @fileoverview Templates in namespace RWUI.Templates.Macros.
+ */
+
+if (typeof RWUI == 'undefined') { var RWUI = {}; }
+if (typeof RWUI.Templates == 'undefined') { RWUI.Templates = {}; }
+if (typeof RWUI.Templates.Macros == 'undefined') { RWUI.Templates.Macros = {}; }
+
+
+RWUI.Templates.Macros.tabButton = function(opt_data, opt_ignored) {
+  return '<li><a class="rwui_tab_button ' + ((opt_data.active) ? 'rw_active' : '') + '" data-hash="' + soy.$$escapeHtml(opt_data.hash) + '">' + soy.$$escapeHtml(opt_data.name) + '</a></li>';
+};
+if (goog.DEBUG) {
+  RWUI.Templates.Macros.tabButton.soyTemplateName = 'RWUI.Templates.Macros.tabButton';
+}
+
+}catch(e){WRMCB(e)};
+;
+try {
+/* module-key = 'com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit', location = 'uitoolkit/scripts/base.js' */
+if(typeof RWUI==="undefined"){var RWUI={}}if(typeof RWUI.Models==="undefined"){RWUI.Models={}}if(typeof RWUI.Collections==="undefined"){RWUI.Collections={}}if(typeof RWUI.Views==="undefined"){RWUI.Views={}}(function(a){RWUI.capitalizeFirstLetter=function(b){return b.charAt(0).toUpperCase()+b.slice(1)};RWUI.scrollToElementWithOffset=function(d,g){if(d!==undefined&&d.length>0&&d.offset()){var c=a(window).scrollTop();var e=c+a(window).height();var b=d.offset().top;var f=b+d.height();if(b<c||f>e){window.scroll(0,d.offset().top-g)}}};RWUI.Views.SoyTemplateView=Backbone.View.extend({render:function(){if(this.template==undefined){console.error("template was undefined");return this.$el}this.$el=a(this.template(this.options));this.delegateEvents();return this.$el}});RWUI.Views.StyleMultiView=Backbone.View.extend({initialize:function(){if(this.collection!==undefined){this.collection.on("change add remove reset",this.render,this);this.$el.html((RWJS.Templates.Utils.loader({bg:"white",size:"large"})));this.collection.fetch()}else{console.error("collection was undefined, must be defined")}}})})(AJS.$);
+}catch(e){WRMCB(e)};
+;
+try {
+/* module-key = 'com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit', location = 'uitoolkit/scripts/macros/ui-expand.js' */
+if(typeof RWUI==="undefined"){console.error("RWUI namespace was undefined, ensure that base.js has been loaded")}(function(a){AJS.toInit(function(){var c=window.location.hash.substr(1);if(c){var b=a("#rwui_"+c);if(b.length>0){b.parent().addClass("rw_open rw_highlight")}RWUI.scrollToElementWithOffset(b,100)}});RWUI.toggleExpandItem=function(b){$expandableItem=a(b).parent();$expandableItem.toggleClass("rw_open");$expandableItem.removeClass("rw_active");a(".rwui_expandable_item.rw_highlight").removeClass("rw_highlight");if(typeof RWMI!="undefined"&&RWMI.mobileMode){}else{window.location.hash=a(b).data("hash")}}})(AJS.$);
+}catch(e){WRMCB(e)};
+;
+try {
+/* module-key = 'com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit', location = 'uitoolkit/scripts/macros/ui-tabs.js' */
+if(typeof RWUI==="undefined"){console.error("RWUI namespace was undefined, ensure that base.js has been loaded")}RWUI.Views.UI_Tabs=Backbone.View.extend({render:function(){var c=$(">.rwui_tabs_menu",this.$el);var a=$(">.rwui_tab_content",this.$el);var e;var b=function(i){var h,g;if(/^tab-.*$/.test(i)){h=a.filter("[data-hash='"+i+"']");g=e.filter("[data-hash='"+i+"']")}if(h===undefined||h.length==0){h=a.first();g=e.first()}a.removeClass("rw_highlight");e.removeClass("rw_highlight");a.removeClass("rw_active");e.removeClass("rw_active");h.addClass("rw_active");g.addClass("rw_active");if(typeof RWMI!="undefined"&&RWMI.mobileMode){}else{window.location.hash=i}};a.each(function(h,k){var l=$(k);var g=l.data("name");var m=l.data("hash");var j=$(RWUI.Templates.Macros.tabButton({name:g,active:h==0,hash:m}));j.click(function(){b(m)});c.append(j)});e=$(".rwui_tab_button",c);var f=window.location.hash.substr(1);b(f);var d=$(".rwui_tab_button[data-hash='"+f+"']",this.$el);if(d.length>0){d.addClass("rw_highlight");$(".rwui_tab_content[data-hash='"+f+"']",this.$el).addClass("rw_highlight");RWUI.scrollToElementWithOffset(d,100)}return this.$el}});(function(a){AJS.toInit(function(){a(".rwui_tabs").each(function(c,b){var d=new RWUI.Views.UI_Tabs({el:b});d.render()})})})(AJS.$);
+}catch(e){WRMCB(e)};
+;
+try {
+/* module-key = 'com.refinedwiki.confluence.plugins.uitoolkit:uitoolkit', location = 'uitoolkit/scripts/macros/ui-steps.js' */
+if(typeof RWUI==="undefined"){console.error("RWUI namespace was undefined, ensure that base.js has been loaded")}(function(a){AJS.toInit(function(){a(".rwui_steps").each(function(c,b){a("> .rwui_step",b).each(function(d,e){a(".rwui_item_number",e).html(d+1)})})})})(AJS.$);
+}catch(e){WRMCB(e)};
